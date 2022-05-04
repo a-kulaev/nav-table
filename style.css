@@ -1,8 +1,9 @@
+/* Global styles */
+
 body {
     margin: 0;
     font-family: "Arial", sans-serif;
 }
-
 
 .wrapper {
     margin: 0 auto;
@@ -17,14 +18,10 @@ body {
 
 h2 {
     margin: 55px 0 34px;
-    text-transform: uppercase;
-    font-size: 24px;
-    letter-spacing: 1px;
     color: #bfbfbf;
-}
-
-.navigation h2 {
-    margin-top: 0px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 p {
@@ -32,75 +29,123 @@ p {
     padding: 0;
 }
 
-table {
-    margin: 30px 0;
-    height: 45px;
-    border-collapse:collapse;
-    border-radius: 3px;
-    text-align: center;
+.menu-1,
+.menu-2,
+.menu-3 {
+    overflow: hidden;
+}
+
+.menu-1 a,
+.menu-2 a,
+.menu-3 a {
+    margin: 0;
+    color: #fff;
     font-size: 16px;
     font-weight: bold;
-    color: #fff;
-}
-
-table a {
     text-decoration: none;
-    color: #fff;
 }
 
-table.menu-1,
-table.menu-2 {
+/* 1. Навігація */
+
+.navigation h2 {
+    margin-top: 0px;
+}
+
+/* menu-1 */
+
+.menu-1 {
+    display: flex;
+    justify-content: space-between;
     background-color: #2a3644;
-}
-
-table.menu-3 {
-    margin: 0;
-}
-
-.menu-3_bcg {
-    margin: 30px 0;
-    overflow: hidden;
     border-radius: 3px;
-    background-color: #2a3644;
 }
 
-.icon:before {
+.menu-1 a {
+    padding: 14px 30px 11px;
+    border: solid 1px #3f4852;
+}
+
+.menu-1 a:hover {
+    color: #fd8612;
+    background-color: #3f4852;
+}
+
+nav.menu-1 a:first-child {
+    border-left: none;
+}
+
+nav.menu-1 a:last-child {
+    border-right: none;
+}
+
+/* menu-2 */
+
+.menu-2 {
+    margin-top: 30px;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    background-color: #2a3644;
+    border: none;
+    border-collapse: collapse;
+    border-radius: 3px;
+}
+
+.menu-2 a {
+    padding: 0 30px;
+}
+
+.menu-2 td {
+    position: relative;
+    border: solid 1px #3f4852;
+}
+
+.menu-2 a:before {
     content: "";
     position: absolute;
-    left: -28px;
-    top: 2px;
-    width: 16px;
-    height: 17px;
-    background: url(../img/sprites.png) no-repeat -52px -21px;
+    width: 100%;
+    height: 100%;
 }
 
+.menu-2 td:hover{
+    background-color: #3f4852;
+}
 
-td {
+.menu-2 td:hover a {
+    color: #fd8612;
+}
+
+nav.menu-2 a:first-child {
+    border-left: none;
+}
+
+nav.menu-2 a:last-child {
+    border-right: none;
+}
+
+/* menu-3 */
+
+.menu-3 {
+    display: flex;
+    margin-top: 30px;
+    background-color: #2a3644;
+    border-radius: 3px;
+}
+
+.menu-3 a {
+    padding: 14px 30px 11px;
+    border: solid 1px #3f4852;
+}
+
+.menu-3 a:first-child {
     position: relative;
 }
 
-
-td a {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-}
-
-td + td {
-    border-left: 1px solid #3f4852;
-}
-
-.link {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.hover:hover {
+.menu-3 a:hover {
     color: #fd8612;
     background-color: #3f4852;
+}
+
+nav.menu-3 a:first-child {
+    padding-left: 58px;
 }
