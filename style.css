@@ -15,13 +15,21 @@ body {
     background-color: #fff;
 }
 
-p {
-    margin: 0 0 34px;
+h2 {
+    margin: 55px 0 34px;
     text-transform: uppercase;
     font-size: 24px;
     letter-spacing: 1px;
     color: #bfbfbf;
-    font-weight: bold;
+}
+
+.navigation h2 {
+    margin-top: 0px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
 }
 
 table {
@@ -32,6 +40,11 @@ table {
     text-align: center;
     font-size: 16px;
     font-weight: bold;
+    color: #fff;
+}
+
+table a {
+    text-decoration: none;
     color: #fff;
 }
 
@@ -51,10 +64,16 @@ table.menu-3 {
     background-color: #2a3644;
 }
 
-table a {
-    text-decoration: none;
-    color: #fff;
+.icon:before {
+    content: "";
+    position: absolute;
+    left: -28px;
+    top: 2px;
+    width: 16px;
+    height: 17px;
+    background: url(../img/sprites.png) no-repeat -52px -21px;
 }
+
 
 td {
     position: relative;
@@ -71,10 +90,6 @@ td a {
 
 td + td {
     border-left: 1px solid #3f4852;
-}
-
-.bcg {
-
 }
 
 .link {
