@@ -44,6 +44,24 @@ p {
     text-decoration: none;
 }
 
+thead {
+    font-weight: bold;
+    background-color: #2a3644;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tbody td {
+    color: #2a3644;;
+}
+
+td {
+    border: solid 1px #3f4852;
+}
+
 /* 1. Навігація */
 
 .navigation h2 {
@@ -81,7 +99,6 @@ nav.menu-1 a:last-child {
 
 .menu-2 {
     margin-top: 30px;
-    width: 100%;
     height: 45px;
     text-align: center;
     background-color: #2a3644;
@@ -96,7 +113,7 @@ nav.menu-1 a:last-child {
 
 .menu-2 td {
     position: relative;
-    border: solid 1px #3f4852;
+    /* border: solid 1px #3f4852; */
 }
 
 .menu-2 a:before {
@@ -134,11 +151,6 @@ nav.menu-2 a:last-child {
     border-radius: 3px;
 }
 
-nav ul {
-    margin: 10px 15px;
-    padding: 0;
-}
-
 nav.menu-3 a:first-child {
     padding-left: 58px;
 }
@@ -163,19 +175,24 @@ nav.menu-3 a:first-child {
 
 .social {
     display: flex;
-}
-
-.social a {
-    display: inline-block;
-    width: 9px;
-    height: 18px;
-    text-align: center;
-    background: url(../nav-table/img/sprites.png);
+    align-items: center;
 }
 
 .social li {
     list-style: none;
 }
+
+ul.social {
+    margin: 0;
+    padding-right: 30px;
+}
+
+.social a {
+    display: block;
+    margin-left: 15px;
+    background: url(../nav-table/img/sprites.png);
+}
+
 
 a.fb {
     width: 9px;
@@ -183,3 +200,24 @@ a.fb {
     background-position: -18px 0;
 }
 
+a.tw {
+    width: 9px;
+    height: 18px;
+    background-position: -18px 0;
+}
+
+a.navigation {
+    width: 9px;
+    height: 18px;
+    background-position: -18px 0;
+}
+
+/* 2. Таблиця */
+
+.table-2 {
+    width: 100%;
+}
+
+thead {
+    color: #fff;
+}
