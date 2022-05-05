@@ -30,8 +30,7 @@ p {
 }
 
 .menu-1,
-.menu-2,
-.menu-3 {
+.menu-2 {
     overflow: hidden;
 }
 
@@ -125,11 +124,18 @@ nav.menu-2 a:last-child {
 
 /* menu-3 */
 
-.menu-3 {
+.navigation-3 {
     display: flex;
+    position: relative;
+    overflow: hidden;
+    justify-content: space-between;
     margin-top: 30px;
     background-color: #2a3644;
     border-radius: 3px;
+}
+
+.menu-3 {
+    display: flex;
 }
 
 .menu-3 a {
@@ -149,3 +155,19 @@ nav.menu-2 a:last-child {
 nav.menu-3 a:first-child {
     padding-left: 58px;
 }
+
+.social a {
+    display: inline-block;
+    width: 9px;
+    height: 18px;
+    background: url(../nav-table/img/sprites.png);
+}
+
+.social li {
+    list-style: none;
+}
+
+a.fb {
+    background-position: -18px 0;
+}
+
