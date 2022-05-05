@@ -47,6 +47,7 @@ p {
 thead {
     font-weight: bold;
     background-color: #2a3644;
+    border-color: #3f4751;
 }
 
 table {
@@ -77,8 +78,12 @@ tbody td {
     background-color: #bfc1c1;
 }
 
-td {
+thead td {
     border: solid 1px #3f4852;
+}
+
+tbody td {
+    border: solid 1px #bfc1c1;
 }
 
 .table-2 td,
@@ -137,7 +142,7 @@ nav.menu-1 a:last-child {
 
 .menu-2 td {
     position: relative;
-    /* border: solid 1px #3f4852; */
+    border: solid 1px #3f4852;
 }
 
 .menu-2 a:before {
@@ -211,7 +216,7 @@ ul.social {
     padding-right: 30px;
 }
 
-.social a {
+/* .social a {
     display: block;
     margin-left: 15px;
     background: url(../nav-table/img/sprites.png);
@@ -234,8 +239,7 @@ a.navigation {
     width: 9px;
     height: 18px;
     background-position: -18px 0;
-}
+} */
 
-/* 2. Таблиця */
 
 
