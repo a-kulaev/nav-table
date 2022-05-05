@@ -134,6 +134,15 @@ nav.menu-2 a:last-child {
     border-radius: 3px;
 }
 
+nav ul {
+    margin: 10px 15px;
+    padding: 0;
+}
+
+nav.menu-3 a:first-child {
+    padding-left: 58px;
+}
+
 .menu-3 {
     display: flex;
 }
@@ -152,14 +161,15 @@ nav.menu-2 a:last-child {
     background-color: #3f4852;
 }
 
-nav.menu-3 a:first-child {
-    padding-left: 58px;
+.social {
+    display: flex;
 }
 
 .social a {
     display: inline-block;
     width: 9px;
     height: 18px;
+    text-align: center;
     background: url(../nav-table/img/sprites.png);
 }
 
@@ -168,6 +178,8 @@ nav.menu-3 a:first-child {
 }
 
 a.fb {
+    width: 9px;
+    height: 18px;
     background-position: -18px 0;
 }
 
