@@ -54,12 +54,36 @@ table {
     border-collapse: collapse;
 }
 
+thead {
+    color: #fff;
+}
+
 tbody td {
-    color: #2a3644;;
+    color: #2a3644;
+}
+
+.table-2 tbody tr:nth-child(1n),
+.table-3 tbody tr:nth-child(1n) {
+    background-color: #f2f2f2;
+}
+
+.table-2 tbody tr:nth-child(2n),
+.table-3 tbody tr:nth-child(2n) {
+    background-color: #e8e8e8;
+}
+
+.table-2 tbody tr:hover,
+.table-3 tbody tr:hover {
+    background-color: #bfc1c1;
 }
 
 td {
     border: solid 1px #3f4852;
+}
+
+.table-2 td,
+.table-3 td {
+    padding: 15px;
 }
 
 /* 1. Навігація */
@@ -214,10 +238,4 @@ a.navigation {
 
 /* 2. Таблиця */
 
-.table-2 {
-    width: 100%;
-}
 
-thead {
-    color: #fff;
-}
