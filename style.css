@@ -84,8 +84,12 @@ thead td {
     border: solid 1px #3f4852;
 }
 
+tbody tr {
+    border-top: solid 1px #bfc1c1;
+}
+
 tbody td {
-    border: solid 1px #bfc1c1;
+    border-left: solid 1px #bfc1c1;
 }
 
 .table-2 td,
