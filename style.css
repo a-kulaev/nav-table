@@ -29,7 +29,6 @@ p {
     padding: 0;
 }
 
-.menu-1,
 .menu-2,
 .navigation-3,
 .table-2,
@@ -45,6 +44,11 @@ p {
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
+}
+
+.menu-1 > a,
+.menu-3 > a {
+    padding: 15px 30px 12px;
 }
 
 table {
@@ -142,14 +146,14 @@ nav ul {
 .menu-1 {
     display: flex;
     justify-content: space-between;
-    background-color: #2a3644;
-    border-radius: 3px;
+    background: linear-gradient(90deg, transparent 1%, #2a3644 1%, #2a3644 99%, transparent 99%);
+    border-radius: 10px;
 }
 
 .menu-1 a {
-    padding: 14px 30px 11px;
     border-left: solid 1px #3f4852;
     border-right: solid 1px #3f4852;
+    background-color: #2a3644;
 }
 
 .menu-1 a:hover {
@@ -159,10 +163,12 @@ nav ul {
 
 nav.menu-1 a:first-child {
     border-left: none;
+    border-radius: 3px 0 0 3px;
 }
 
 nav.menu-1 a:last-child {
     border-right: none;
+    border-radius: 0 3px 3px 0;
 }
 
 /* menu-2 */
@@ -222,7 +228,6 @@ nav.menu-3 a:first-child {
 }
 
 .menu-3 a {
-    padding: 14px 30px 11px;
     border-right: solid 1px #3f4852;
 }
 
@@ -238,17 +243,61 @@ nav.menu-3 a:first-child {
 .home:before {
     content: "";
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 30px;
+    top: 16px;
     width: 16px;
     height: 13px;
-    background: url(../nav-table/img/sprites.png) no-repeat 0 0;
+    background: url(../img/sprites.png) no-repeat 0 0;
 }
 
 .social {
     display: flex;
     align-items: center;
+    padding: 0 15px;
 }
+
+.social a {
+    display: block;
+    margin: 13.5px 15px 13.5px 15px;
+    background: url(../img/sprites.png) no-repeat;
+}
+
+a.fb {
+    width: 9px;
+    height: 18px;
+    background-position: -18px 0;
+}
+
+a.fb:hover {
+    width: 9px;
+    height: 18px;
+    background-position: -18px -20px;
+}
+
+a.tw {
+    width: 16px;
+    height: 14px;
+    background-position: -45px 0;
+}
+
+a.tw:hover {
+    width: 16px;
+    height: 14px;
+    background-position: -45px -20px;
+}
+
+a.ig {
+    width: 14px;
+    height: 16px;
+    background-position: -29px 0;
+}
+
+a.ig:hover {
+    width: 14px;
+    height: 16px;
+    background-position: -29px -20px;
+}
+
 
 .social li {
     list-style: none;
@@ -256,6 +305,5 @@ nav.menu-3 a:first-child {
 
 ul.social {
     margin: 0;
-    padding-right: 30px;
 }
 
