@@ -116,6 +116,17 @@ tbody tr + tr {
     text-align: right;
 }
 
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+.dropdown{
+    position: absolute;
+    width: 210px;
+    background-color: #d2d4d5;
+}
+
 /* 1. Навігація */
 
 .navigation h2 {
@@ -123,6 +134,10 @@ tbody tr + tr {
 }
 
 /* menu-1 */
+
+.navigation-1 {
+    position: relative;
+}
 
 .menu-1 {
     display: flex;
@@ -192,7 +207,6 @@ nav.menu-2 a:last-child {
 
 .navigation-3 {
     display: flex;
-    position: relative;
     justify-content: space-between;
     margin-top: 30px;
     background-color: #2a3644;
@@ -212,13 +226,23 @@ nav.menu-3 a:first-child {
     border-right: solid 1px #3f4852;
 }
 
-.menu-3 a:first-child {
-    position: relative;
-}
-
 .menu-3 a:hover {
     color: #fd8612;
     background-color: #3f4852;
+}
+
+.home {
+    position: relative;
+}
+
+.home:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 16px;
+    height: 13px;
+    background: url(../nav-table/img/sprites.png) no-repeat 0 0;
 }
 
 .social {
