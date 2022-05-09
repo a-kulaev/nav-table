@@ -173,6 +173,8 @@ nav ul {
 }
 
 .dropdown {
+    padding-top: 5px;
+    color: transparent;
     display: none;
     width: 210px;
 }
