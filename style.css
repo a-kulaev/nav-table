@@ -126,7 +126,7 @@ nav ul {
     display: flex;
     margin: 0;
     justify-content: space-between;
-    background: linear-gradient(90deg, transparent 1%, #2a3644 1%, #2a3644 99%, transparent 99%, transparent 100%);
+    background: linear-gradient(90deg, transparent 5%, #2a3644 5%, #2a3644 95%, transparent 95%, transparent 100%);
 }
 
 .menu-1 > ul > li {
@@ -155,8 +155,13 @@ nav ul {
 }
 
 .menu-1 > ul > li:last-child > a {
+    margin-right: -0.5px;
     border-right: none;
     border-radius: 0 3px 3px 0;
+}
+
+.menu-1 > ul > li:last-child > ul {
+    margin-left: -89px;
 }
 
 .menu-1 > ul > li > ul {
@@ -191,6 +196,14 @@ nav ul {
 
 .dropdown > li + li > a {
     border-top: 1px solid #b9bdc1;
+}
+
+.dropdown > li:first-child > a {
+    border-radius: 3px 3px 0 0;
+}
+
+.dropdown > li:last-child > a {
+    border-radius: 0 0 3px 3px;
 }
 
 .dropdown li:hover > a {
