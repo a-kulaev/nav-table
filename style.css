@@ -57,7 +57,6 @@ thead th + th {
 
 th a {
     color: #fff;
-    text-decoration: none;
 }
 
 
@@ -113,6 +112,14 @@ nav ul {
     list-style: none;
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 /* 1. Навігація */
 
 .navigation h2 {
@@ -140,7 +147,6 @@ nav ul {
     padding: 13.5px 30px;
     font-weight: bold;
     font-size: 16px;
-    text-decoration: none;
     background-color: #2a3644;
 }
 
@@ -179,7 +185,7 @@ nav ul {
 }
 
 .dropdown {
-    padding-top: 5px;
+    padding: 5px 0 0 0;
     color: transparent;
     display: none;
     width: 210px;
@@ -192,7 +198,6 @@ nav ul {
     background-color: #d2d4d5;
     font-weight: bold;
     font-size: 15px;
-    text-decoration: none;
 }
 
 .dropdown > li + li > a {
@@ -221,6 +226,19 @@ nav ul {
     border-collapse: collapse;
 }
 
+.menu-2 th {
+    position: relative;
+}
+
+.menu-2 th > a:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .menu-2 th:first-child {
     border-radius: 3px 0 0 3px;
 }
@@ -229,18 +247,30 @@ nav ul {
     border-radius: 0 3px 3px 0;
 }
 
-.menu-2 a:before {
+/* .menu-2 a:before {
+    position: absolute;
     content: "";
     width: 100%;
     height: 100%;
-}
+} */
 
-.menu-2 th:hover{
+.menu-2 th:hover {
     background-color: #3f4852;
 }
 
-.menu-2 th:hover a {
+.menu-2 th:hover > a {
     color: #fd8612;
+}
+
+.menu-2 th > ul {
+    margin-top: 12px;
+    padding-left: 0px;
+}
+
+.menu-2 th:hover > div > ul {
+    position: absolute;
+    display: block;
+    z-index: 2;
 }
 
 nav.menu-2 a:first-child {
@@ -249,6 +279,60 @@ nav.menu-2 a:first-child {
 
 nav.menu-2 a:last-child {
     border-right: none;
+}
+
+.menu-2 .dropdown {
+    margin-left: -31px;
+}
+
+.dropdown > li:hover > .dropdown  {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.position-relarive {
+    position: relative;
+}
+
+.menu-2 ul.dropdown {
+    margin-top: 12px;
+}
+
+.pr {
+    position: relative;
+}
+
+.menu-2 .dropdown a {
+    text-align: left;
+}
+
+.dropdown > .pr > .second-dropdown {
+    margin: 1px 0 0 210px;
+    padding: 0 0 0 5px;
+}
+
+.dropdown > .pr > .third-dropdown {
+    margin: 1px 0 0 -215px;
+    padding: 0 5px 0 0;
+}
+
+.dropdown.second-dropdown {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+}
+
+.dropdown.third-dropdown {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
 }
 
 /* menu-3 */
@@ -274,7 +358,6 @@ nav.menu-2 a:last-child {
     padding: 13.5px 30px;
     font-weight: bold;
     font-size: 16px;
-    text-decoration: none;
     background-color: #2a3644;
 }
 
@@ -292,10 +375,6 @@ nav.menu-2 a:last-child {
     margin-right: -0.5px;
     border-right: none;
     border-radius: 0 3px 3px 0;
-}
-
-.menu-3 > ul > li:last-child > ul {
-    margin-left: -89px;
 }
 
 .menu-3 > ul > li > ul {
@@ -327,6 +406,15 @@ nav.menu-2 a:last-child {
 .dropdown li:hover > a {
     color: #fd8612;
     background-color: #2a3644;
+}
+
+.double-dropdown {
+    display: flex;
+    overflow: hidden;
+}
+
+.double-dropdown .dropdown li a {
+    border-radius: 0;
 }
 
 
