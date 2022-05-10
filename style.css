@@ -166,6 +166,7 @@ nav ul {
 
 .menu-1 > ul > li > ul {
     position: absolute;
+    z-index: 1;
 }
 
 .menu-1 > ul > li:hover > a {
@@ -211,13 +212,6 @@ nav ul {
     background-color: #2a3644;
 }
 
-
-
-
-
-
-
-
 /* menu-2 */
 
 .menu-2 {
@@ -262,5 +256,80 @@ nav.menu-2 a:last-child {
 .navigation-3 {
     margin-top: 30px;
 }
+
+.menu-3 > ul {
+    display: flex;
+    margin: 0;
+    background: linear-gradient(90deg, transparent 5%, #2a3644 5%, #2a3644 95%, transparent 95%, transparent 100%);
+}
+
+.menu-3 > ul > li {
+    position: relative;
+    display: block;
+}
+
+.menu-3 > ul > li > a {
+    color: #fff;
+    display: block;
+    padding: 13.5px 30px;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #2a3644;
+}
+
+.menu-3 > ul > li > a {
+    border-left: 1px solid #3f4751;
+    border-right: 1px solid #3f4751;
+}
+
+.menu-3 > ul > li:first-child > a {
+    border-left: none;
+    border-radius: 3px 0 0 3px;
+}
+
+.menu-3 > ul > li:last-child > a {
+    margin-right: -0.5px;
+    border-right: none;
+    border-radius: 0 3px 3px 0;
+}
+
+.menu-3 > ul > li:last-child > ul {
+    margin-left: -89px;
+}
+
+.menu-3 > ul > li > ul {
+    position: absolute;
+    z-index: 3;
+}
+
+.menu-3 > ul > li:hover > a {
+    color: #fd8612;
+    background-color: #3f4852;
+}
+
+.menu-3 > ul > li:hover .dropdown {
+    display: block;
+}
+
+.dropdown > li + li > a {
+    border-top: 1px solid #b9bdc1;
+}
+
+.dropdown > li:first-child > a {
+    border-radius: 3px 3px 0 0;
+}
+
+.dropdown > li:last-child > a {
+    border-radius: 0 0 3px 3px;
+}
+
+.dropdown li:hover > a {
+    color: #fd8612;
+    background-color: #2a3644;
+}
+
+
+
 
 
