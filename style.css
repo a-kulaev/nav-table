@@ -479,16 +479,13 @@ a.ig:hover {
     background-position: -29px -20px;
 }
 
-.menu-3 .dropdown {
-    margin-left: -1px;
-}
-
 .double-dropdown {
     margin-left: -1px;
+    padding-top: 0;
 }
 
-.double-dropdown li {
-    margin-left: -1px;
+a.brr {
+    border-right: 1px solid #b9bdc1;
 }
 
 
