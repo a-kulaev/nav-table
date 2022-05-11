@@ -481,7 +481,25 @@ a.ig:hover {
 
 .double-dropdown {
     margin-left: -1px;
+    padding-top: 5px;
+}
+
+.double-dropdown ul {
     padding-top: 0;
+}
+
+.double-dropdown li:first-child {
+    padding-top: 0;
+    background-color: #d2d4d5;
+    border-radius: 3px 0 0 3px;
+    overflow: hidden;
+}
+
+.double-dropdown li:last-child {
+    padding-top: 0;
+    background-color: #d2d4d5;
+    border-radius: 0 3px 3px 0;
+    overflow: hidden;
 }
 
 a.brr {
