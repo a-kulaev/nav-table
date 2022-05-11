@@ -425,7 +425,7 @@ nav.menu-2 a:last-child {
     top: 15px;
     width: 16px;
     height: 13px;
-    background: url(../img/sprites.png) no-repeat 0 0;
+    background: url(../nav-table/img/sprites.png) no-repeat 0 0;
 }
 
 .social {
@@ -446,7 +446,7 @@ nav.menu-2 a:last-child {
 
 .social a {
     display: inline-block;
-    background: url(../img/sprites.png) no-repeat;
+    background: url(../nav-table/img/sprites.png) no-repeat;
 }
 
 a.fb {
