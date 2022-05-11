@@ -506,6 +506,10 @@ a.brr {
     border-right: 1px solid #b9bdc1;
 }
 
+a.brb {
+    border-bottom: 1px solid #b9bdc1;
+}
+
 .dropdown > li:first-child {
     border-radius: 0;
 }
