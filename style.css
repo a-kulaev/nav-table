@@ -510,3 +510,7 @@ a.brr {
     border-radius: 0;
 }
 
+.dropdown > li:last-child {
+    border-radius: 0;
+}
+
